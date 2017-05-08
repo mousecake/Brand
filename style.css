@@ -1,0 +1,557 @@
+/* Block of code below is for CSS reset purposes only and is not created by student */
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+/* End Myerweb CSS Reset */
+
+
+/*   Student (Maurice Searcy) created CSS code for the site "Maurice's Portfolio" begins below */
+
+
+/* Color Guide
+
+Gray: rgb(204,204,204)
+Dark Gray: rgb(10,10,10)
+Yellow: rgb(249,236,43)
+
+*/
+
+
+/* media targeting */
+
+
+@viewport {
+	width: device-width;
+	zoom: 1;
+    min-zoom: 1;
+    max-zoom: 2;
+	}
+
+	
+/* Global */
+
+
+body {
+    background-color: rgb(120,120,120);
+	font-family: 'enriqueta', serif;
+	font-weight: 500;
+	font-style: normal;
+	text-rendering: optimizeLegibility;
+	color: rgba(0,0,0);
+	font-size: 110%;
+	line-height: 1.3;
+    min-width: 1024px;
+    max-width: 1024px;
+    margin: 1em auto;
+	}
+
+header {
+    width: 100%;
+    }
+
+h1 {
+    text-indent: -9999px;
+    }
+
+header a {
+    margin: 0 auto;
+    display: block;
+	text-indent: -9999px;
+    }
+
+header p {
+	text-indent: -9999px;
+     display: none;
+	}
+
+	
+/* Navigation */
+
+
+.skip {
+    position: absolute;
+    text-indent: -9999px;
+	}
+    
+
+section {
+    margin-top: -0.2em;
+    }
+
+header {
+    margin: 0 auto;
+}
+
+nav {
+    width: 1024px;
+    margin: 0 auto;
+    }
+    
+nav ul li {
+    display: inline;
+    margin: 0 auto;
+    }
+
+    nav ul li a {
+        display: block;
+        height: 33px;
+        float: left;
+        text-indent: -9999px;
+        margin: 0 auto;
+        }
+
+        nav ul li.frontPage a {
+            width: 218px;
+            background: url('images/nav-home.jpg') top center;
+            }
+        nav ul li.about a {
+            width: 197px;
+            background: url('images/nav-about.jpg') top center;
+            }
+        nav ul li.gallery a {
+            width: 196px;
+            background: url('images/nav-gallery.jpg') top center;
+            }
+        nav ul li.resume a {
+            width: 197px;
+            background: url('images/nav-resume.jpg') top center;
+            }
+        nav ul li.contact a {
+            width: 216px;
+            background: url('images/nav-contact.jpg') top center;
+            }
+        nav ul li a:hover {
+            background-position: center center;
+        }
+        nav ul li a:active {
+            background-position: bottom center;
+        }
+
+#portfolioHeader a {
+	height: 224px;
+	width: 1024px;
+	background: url('images/header.jpg') no-repeat center;
+	}
+
+#portfolio {
+    margin: 0 auto;
+    width: 100%;
+    }
+
+    #portfolio h2, #portfolio p {
+        text-indent: -9999px;
+        }
+
+    #portfolio ul li {
+        display: inline;
+        }
+
+    #portfolio ul li a {
+        display: block;
+        float: left;
+        text-indent: -9999px;
+        width: 512px;
+        }
+
+    #portfolio ul.nico li a {
+        height: 357px;
+        }
+    #portfolio ul.aurora li a {
+        height: 358px;
+        }
+
+        #portfolio ul li.about a {
+            background: url('images/about.jpg') top center;
+            }
+        #portfolio ul li.gallery a {
+            background: url('images/resume.jpg') top center;
+            }
+        #portfolio ul li.resume a {
+            background: url('images/gallery.jpg') top center;
+            }
+        #portfolio ul li.contact a {
+            background: url('images/contact.jpg') top center;
+            }
+        #portfolio ul li a:hover {
+            background-position: center center;
+        }
+        #portfolio ul li a:active {
+            background-position: bottom center;
+        }
+
+#aboutHeader {
+	height: 224px;
+	width: 1024px;
+	background: url('images/about-header.jpg') no-repeat center;
+	}
+
+#about {
+    margin: 2em auto -2em;
+    background: url('images/about-background.jpg');
+    height: 1074px;
+    width: 1024px;
+    }
+
+#about > h2 {
+    text-indent: -9999px;
+    }
+
+#about > p {
+    padding: 0.3em 8em;
+    text-indent: 3em;
+}
+
+#about > figure {
+    margin: 2em auto 3.5em;
+    width: 600px;
+    height: 505px;
+}
+
+figcaption {
+    width: 70%;
+    margin: 0 auto;
+	padding-top: 1em;
+    font-size: 0.8em;
+    text-align: center;
+	}
+
+#galleryHeader {
+	height: 224px;
+	width: 1024px;
+	background: url('images/gallery-header.jpg') no-repeat center;
+	}
+
+#resumeHeader {
+	height: 224px;
+	width: 1024px;
+	background: url('images/resume-header.jpg') no-repeat center;
+	}
+
+#gallery {
+    margin: 2em auto 0;
+    background: url('images/gallery-background.jpg');
+    height: 5787px;
+    width: 1024px;
+    }
+
+#about > h2, #gallery > h2, #resume >h2, #contact >h2 {
+    text-indent: -9999px;
+    }
+
+
+p.top {
+    background-color: rgb(204,204,204);
+    text-align: center;
+}
+
+#resume {
+    margin: 2em 0 0;
+    background: url('images/resume-background.jpg');
+    height: 1148px;
+    width: 1024px;
+    }
+
+#resume ul li {
+    list-style: disc;
+}
+
+#resume p {
+    margin: 1em auto 0;
+}
+
+#resume ul li {
+    margin: 0em 8em;
+}
+
+#dload {
+    text-align: center;
+    }
+
+.summary {
+    padding: 0 6em;
+}
+
+p.ribbonText {
+    width: 95%;
+    height: 65px;
+    background: url('images/resume-ribbon.jpg') no-repeat center;
+    background-size: 100%;
+    text-align: center;
+    padding-top: 0.3em;
+    font-weight: bold;
+    font-size: 150%;
+}
+
+p.dates {
+    font-weight: bold;
+    padding: 0 5em;
+}
+
+#contactHeader {
+    margin: 1em auto 0;
+	height: 224px;
+	width: 1024px;
+	background: url('images/contact-header.jpg') no-repeat center;
+	}
+
+#contact {
+    margin: 2em 0 0;
+    background: url('images/contact-background.jpg');
+    height: 943px;
+    width: 1024px;
+    }
+
+footer.galleryFooter {
+    clear: both;
+    height: 59px;
+    background: url('images/gallery-footer.jpg');
+    }
+
+footer.portfolioFooter {
+    clear: both;
+    height: 52px;
+    background: url('images/footer.jpg');
+    }
+
+footer.portfolioFooter > address, footer.galleryFooter > address {
+    padding-top: 1em;
+}
+
+footer.resumeFooter {
+    clear: both;
+    margin-top: -2.5em;
+    }
+
+address {
+    text-align: center;
+    
+    }
+
+#contact p {
+    margin: 2em 10em;
+    }
+
+#contactFooter {
+    margin: -2em auto 0;
+    }
+
+#contact-form {
+    background-color:rgb(204,204,204);
+    width:465px;
+    padding:20px;
+    margin: 50px auto;    
+    border: 6px solid rgb(114,114,114);
+    -moz-border-radius:15px;
+    -webkit-border-radius:15px;
+    border-radius:15px;
+    position:relative;
+}
+ 
+#contact-form h1 {
+    font-size:42px;
+}
+ 
+#contact-form h2 {
+    margin-bottom:15px;
+    font-style:italic;
+    font-weight:normal;
+}
+ 
+#contact-form input, 
+#contact-form select, 
+#contact-form textarea, 
+#contact-form label {
+    font-size:15px;
+    margin-bottom:2px;
+}
+ 
+#contact-form input, 
+#contact-form select, 
+#contact-form textarea {
+    width:450px;
+    border: 1px solid rgb(204,204,204);
+    margin-bottom:20px;
+    padding:4px;
+}
+ 
+#contact-form input:focus, 
+#contact-form select:focus, 
+#contact-form textarea:focus {
+    border: 1px solid rgb(114,114,114);
+    background-color: rgb(204,204,204);
+}
+ 
+#contact-form textarea {
+    height:150px;
+    resize: none;
+}
+ 
+#contact-form label {
+    display:block;
+}
+ 
+#contact-form .required {
+    font-weight:bold;
+    color:#F00;    
+}
+ 
+#contact-form #submit-button {
+    width: 100px;
+    background-color:#333;
+    color:#FFF;
+    border:none;
+    display:block;
+    float:right;
+    margin-bottom:0px;
+    margin-right:6px;
+    background-color:rgb(114,114,114));
+    -moz-border-radius:8px;
+}
+ 
+#contact-form #submit-button:hover {
+    background-color: rgb(114,114,114);
+}
+ 
+#contact-form #submit-button:active {
+    position:relative;
+    top:1px;
+}
+ 
+#contact-form #loading {
+    width:32px;
+    height:32px;
+    background-image:url(../img/loading.gif);
+    display:block;
+    position:absolute;
+    right:130px;
+    bottom:16px;
+    display:none;
+}
+ 
+#errors {
+    border:solid 1px #E58E8E;
+    padding:10px;
+    margin:25px 0px;
+    display:block;
+    width:437px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    background:#FFE6E6 url(../img/cancel_48.png) no-repeat 405px center;
+    display:none;
+}
+ 
+#errors li {
+    padding:2px;
+    list-style:none;    
+}
+ 
+#errors li:before {
+    content: ' - ';    
+}
+ 
+#errors #info {
+    font-weight:bold;
+}
+ 
+#errors #info:before {
+    content: '';    
+}
+ 
+#success {
+    border:solid 1px #83D186;
+    padding:25px 10px;
+    margin:25px 0px;
+    display:block;
+    width:437px;
+    -webkit-border-radius:8px;
+    -moz-border-radius:8px;
+    border-radius:8px;
+    background:#D3EDD3 url(../img/accepted_48.png) no-repeat 405px center;
+    font-weight:bold;
+    display:none;
+}
+ 
+#errors.visible, #success.visible {
+    display:block;    
+}
+ 
+#req-field-desc {
+    font-style:italic;
+}
+ 
+/* Remove box shadow firefox, chrome and opera put around required fields. It looks rubbish. */
+input:required, textarea:required {
+    -moz-box-shadow:none;
+    -webkit-box-shadow:none;
+    -o-box-shadow:none;
+    box-shadow:none;
+}
+ 
+/* Normalize placeholder styles */
+ 
+/* chrome, safari */
+::-webkit-input-placeholder {
+    color:#CCC;
+    font-style:italic;
+}
+ 
+/* mozilla */
+input:-moz-placeholder, textarea:-moz-placeholder {
+    color:#CCC;
+    font-style:italic;
+}
+ 
+/* ie (faux placeholder) */
+input.placeholder-text, textarea.placeholder-text  { 
+    color:#CCC;
+    font-style:italic;
+}
+
+}
